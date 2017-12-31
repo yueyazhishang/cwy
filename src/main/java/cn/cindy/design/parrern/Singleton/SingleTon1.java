@@ -41,9 +41,7 @@ class SingleTon2{
  */
 class SingleTon3{
     private static volatile SingleTon3 instance ;
-    private SingleTon3(){
-
-    }
+    private SingleTon3(){ }
     public static SingleTon3 getInstance (){
         if(instance == null) {
             synchronized (SingleTon3.class) {
