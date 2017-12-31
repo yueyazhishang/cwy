@@ -1,4 +1,4 @@
-package main.java.cn.cindy.design.parrern.Singleton;
+package cn.cindy.design.parrern.singleton;
 
 /**
  * Created by Administrator on 2017/12/31.
@@ -41,7 +41,7 @@ class SingleTon2{
  */
 class SingleTon3{
     private static volatile SingleTon3 instance ;
-    private SingleTon3(){ }
+    private SingleTon3(){  }
     public static SingleTon3 getInstance (){
         if(instance == null) {
             synchronized (SingleTon3.class) {
